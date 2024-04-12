@@ -1,17 +1,26 @@
 #!/bin/bash
-echo -n "Print message? "
-valid=0
-while
-[ $valid == 0 ]
+
+echo "Here is the list of fruit and color"
+
+for myfruit in $(<fruit_data)
 do
-    read ans
-    case $ans in
-    yes|YES|y|Y ) echo Will print the message
-                  echo The Message
-                  valid=1
-                  ;;
-    [nN][oO]    ) echo Will NOT print the message 
-                  valid=1 ;;
-    *           ) echo Yes or No of some form please ;;
-    esac
+  case $myfruit in
+	apple|cherry)
+		echo "$myfruit is red."
+		;;
+	banana|lemon)
+		echo "$myfruit is yellow."
+		;;
+	grape)
+		echo "$myfruit is purple."
+		;;
+	orange)
+		echo "$myfruit is orange."
+		;;
+	*)
+		echo "Sorry, I don't know the $myfruit color."
+		;;
+  esac
 done
+echo 
+echo "That's all folks!"

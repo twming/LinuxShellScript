@@ -1,21 +1,19 @@
 #!/bin/bash
+
+NUM1=$1
+NUM2=$2
+
+
 if
-   test -x /bin/ls 
+   (($#>1))
 then
-   if
-   [ ! -w /etc/hosts ]
-   then
-      if 
-      echo about to look for foobar
-      grep -q foobar /etc/passwd
-      then
-         echo foobar found in /etc/passwd
-      else
-         echo foobar not found
-      fi
-   fi
+   ((TOTAL=NUM1+NUM2))
+   echo "There are $# parameters. The first two are $1 and $2."
+   echo "The total of first two numbers is $TOTAL"
+   
 else
-   echo Oh no, /bin/ls not executable
+   echo "Please enter 2 numbers"
+   
 fi
 
       

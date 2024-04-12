@@ -1,7 +1,6 @@
-#/bin/bash
-((n=2**3 + 5))
-echo n = $n
-((y=n^4))
-echo y = $y  
+#!/bin/bash
 
-
+((x=2+3))
+echo "x = $x"
+((y=2*3))
+echo "y = $y"  

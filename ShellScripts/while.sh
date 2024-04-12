@@ -1,10 +1,8 @@
 #!/bin/bash
-x=1
-while
-	((x<10))
+INPUT_STRING=hello
+while [ "$INPUT_STRING" != "bye" ]
 do
-	echo loop $x
-	date >date.$x
-	((x=x+1))
+  echo "Please type something in (bye to quit)"
+  read INPUT_STRING
+  echo "You typed: $INPUT_STRING"
 done
-
