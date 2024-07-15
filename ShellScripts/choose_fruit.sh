@@ -9,8 +9,6 @@ echo "Now is `date` : " >> ~/LinuxShellScript/linkdata/current/$HOUR/record.txt
 echo "Research shows that eating fruits is good for health." >> ~/choose_5_fruit_result.txt
 echo "The fruits of the day are:" >> ~/choose_5_fruit_result.txt
 
-echo "Research shows that eating fruits is good for health." >> ~/choose_5_fruit_result.txt
-echo "The fruits of the day are:" >> ~/choose_5_fruit_result.txt
 FRUIT=`cat ~/LinuxShellScript/mydata/all_fruits.txt | shuf | head -5`
 for myfruit in $FRUIT
 do
