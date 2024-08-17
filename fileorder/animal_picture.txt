@@ -75,7 +75,7 @@ armadillo.tiff
 wolf.jpeg
 monkey.jpeg
 bat.jpeg
-giant panda.jpeg
+panda.jpeg
 camel.tiff
 hippopotamus.jpeg
 ibex.jpeg
