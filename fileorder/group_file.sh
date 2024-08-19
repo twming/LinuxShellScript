@@ -49,4 +49,5 @@ done
 rm -rf $source_dir
 
 echo "Files organized successfully!"
+echo "Total $png_no,$jpeg_no,$tiff_no of PNG,JPEG,TIFF images are organized."
 echo "$source_dir folder has been removed."

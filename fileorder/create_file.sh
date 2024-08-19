@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "The script helps you to create animal images file."
+echo "The script helps you to create animal image files."
 read -p "Enter the source directory to create : " source_dir
 
 if [ -d $source_dir ]; then
