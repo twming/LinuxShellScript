@@ -28,7 +28,7 @@ for file in $(<animal_picture.txt)
 do
 	touch $source_dir/$file
 	echo "$file" >> $source_dir/$file
-	i=i+1
+	((i=i+1))
 done
 
 echo "Total $i images are created in $source_dir"
