@@ -3,7 +3,7 @@
 i=1
 echo "Now is `date` : " > ~/choose_5_fruit_result.txt
 
-HOUR=`date +%k`
+HOUR=`date +%H`
 echo "Now is `date` : " >> ~/LinuxShellScript/linkdata/current/$HOUR/record.txt
 
 echo "Research shows that eating fruits is good for health." >> ~/choose_5_fruit_result.txt
